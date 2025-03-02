@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pods shop</title>
+</head>
+<body>
+    <!-- top bar -->
+    <div id="top-bar" class="bg-gray-100 top-0 left-0 right-0 fixed py-2">
+        <p class="text-center py-2 font-semibold">% APR available for qualified buyers</p>
+    </div>
+
+    <!-- header -->
+     <header class="flex justify-between items-center py-6 px-10 mt-16">
+        <h1 class="font-bold">EarBuds Tz</h1>
+        <button>
+            <i class="fa-solid fa-globe"></i> <span class="font-bold">Tz</span>
+        </button>
+     </header>
+
+     <main class="flex flex-col md:flex-row justify-between md:px-10 py-6 px-4">
+        <!-- image section -->
+         <section class="w-full md:w-3/4">
+            <div class="sticky top-24 space-y-4 ">
+                <!-- exterior img -->
+                <div class="h-96 flex items-center justify-center bg-gray-200 overflow-hidden">
+                    <img src="./images/imagestock/ipods4.jpg" alt="stealth grey" class="max-w-full h-auto transform scale-125 img" id="pods-exterior">
+                </div>  
+
+                <!-- interior img -->
+                <div class="h-96 flex items-center justify-center bg-gray-200 overflow-hidden">
+                    <img src="./images/imagestock/extpods2.jpeg" alt="pearl white" class="max-w-full h-auto transform scale-125 img" id="pods-interior">
+                </div>   
+            </div>
+         </section>
+
+         <!-- sidebar -->
+          <aside class="w-full md:w-1/3 pl-0 md:ml-8 mt-6 md:mt-0 z-2">
+            <h1 class="text-4xl text-center font-bold mb-5">Wireless Earbuds</h1>
+            <h2 class="text-xl font-light text-center">Customize Your Earbuds</h2>
+
+            <!-- case color button -->
+             <div class="my-8" id="case-col-button">
+                <h3 class="mb-2 font-semibold">Color</h3>
+                <div class="flex space-x-4">
+                    <button class="btn-selected transition-transform duration-300 bg-gray-200 hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full text-center cursor-pointer" data-color="stealth grey">
+                   
+                    </button>
+                    <button class="transition-transform duration-300 bg-green-300 hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full  text-center cursor-pointer" data-color="solid green">
+         
+                    </button>
+                    <button class="transition-transform duration-300 bg-black text-white hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full  text-center cursor-pointer" data-color="solid black">
+                       
+                    </button>
+                    <button class="transition-transform duration-300 bg-blue-900 text-white hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full  text-center cursor-pointer" data-color="solid blue">
+                       
+                    </button>
+                    <button class="transition-transform duration-300 bg-red-800 text-white hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full  text-center cursor-pointer" data-color="deep red">
+                        
+                    </button>
+                </div>
+             </div>
+
+             <!-- pods color -->
+              <div class="my-8" id="pods-col-button">
+                <h3 class="mb-2 font-semibold">Buds color</h3>
+                <div class="flex space-x-4">
+                    <button class="btn-selected transition-transform text-white duration-300 bg-gray-300 hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full text-center cursor-pointer" data-color="Light">
+                        
+                    </button>
+                    <button class="transition-transform duration-300 bg-black hover:scale-110 px-4 py-2 font-semibold shadow-sm  rounded-full text-center cursor-pointer" data-color="Dark">
+                       
+                    </button>
+                </div>  
+            </div>
+
+            <!-- Case button -->
+             <div class="mb-8" id="case-type">
+                <h3 class="font-semibold mb-2">Case</h3>
+                <button class="w-full py-4 mb-2 bg-gray-700 hover:bg-gray-600 hover:text-white transition-colors duration-300 text-white rounded-lg">Charging Case ( USB-C )</button>
+                <button class="w-full py-4 mb-2 bg-gray-200 hover:bg-gray-600 hover:text-white transition-colors duration-300  rounded-lg" id="magsafe-charge">Wireless Charging Case, MagSafe (+Tsh 250,000)</button>
+             </div>
+
+             <!-- noise cancellation -->
+              <div class="border mb-8 p-4 rounded-lg shadow">
+                <h3 class="font-semibold mb-2">Active Noise Cancelling</h3>
+                <label class="flex items-center space-x-1">
+                    <input type="checkbox" id="noise-cancellation" class="text-blue-600 form-checkbox h-5 w-5">
+                    <span>Full Range Noise cancellation for Tsh 200,000</span>
+                </label>
+              </div>
+
+              <!-- perfomance package -->
+               <div class="mb-8">
+                    <h3 class="mb-2 font-semibold">Performance package</h3>
+                    <button id="perfomance-btn" class="w-full py-4 rounded-lg bg-gray-200 hover:bg-gray-400">
+                        Performance upgrade (+Tsh 10,000)
+                    </button>
+               </div>
+
+               <!-- accesories checkboxes -->
+                <div class="mb-8">
+                    <h3 class="font-semibold mb-2">Accesories</h3>
+                    <div class="space-y-4">
+                        <label class="flex justify-between items-center p-4 rounded-lg shadow border">
+                            <span>Incase Lanyard</span>
+                            <span class="flex items-center space-x-2">
+                                <input type="checkbox" class="accessories-form-checkbox h-5 w-5">
+                                <span>Tsh 3,000</span>
+                            </span>
+                        </label>
+
+                        <label class="flex justify-between items-center p-4 rounded-lg shadow border">
+                            <span>Ear Tips</span>
+                            <span class="flex items-center space-x-2">
+                                <input type="checkbox" class="accessories-form-checkbox h-5 w-5">
+                                <span>Tsh 2,000</span>
+                            </span>
+                        </label>
+
+                        <label class="flex justify-between items-center p-4 rounded-lg shadow border">
+                            <span>Belkin Airpods Cleaning Kit</span>
+                            <span class="flex items-center space-x-2">
+                                <input type="checkbox" class="accessories-form-checkbox h-5 w-5">
+                                <span>Tsh 15,000</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- total price section -->
+                 <div class="pt-4">
+                    <h3 class="font-semibold text-lg">Total Price</h3>
+                    <p id="total-price" class="font-bold text-2xl">Tsh 70,000</p>
+                 </div>
+
+                <!-- Payment breakdown
+                 <div class="border-t pt-4 mt-6">
+                    <h3 class="font-semibold text-lg">Estimated Payment Breakdown</h3>
+                    <div class="mt-4">
+                        <p>
+                            Down Payment:
+                            <span id="down-payment" class="font-bold">Tsh 45,000</span>
+                        </p>
+                    </div>
+                 </div> -->
+          </aside>
+     </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

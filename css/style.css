@@ -1,0 +1,28 @@
+.btn-selected {
+    border: 2px solid #838282;
+    border-radius: 50%;
+    padding: 16px;
+    transition: transform 0.3s;
+}
+
+.btn-selected:hover {
+    transform: scale(1) !important;
+}
+
+#top-bar {
+    transition: transform 0.5s ease-in-out;
+}
+
+.visible-bar {
+    transform: translateY(0);
+}
+
+.hidden-bar {
+    transform: translateY(-100%);
+}
+
+.img {
+    max-width: 400px; /* Adjust size */
+    height: auto;
+  }
+  
